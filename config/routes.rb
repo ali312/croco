@@ -8,9 +8,9 @@ Croco::Application.routes.draw do
 #
 #  get "rooms/config_opentok"
 
-    root :to => "rooms#index"
-  resources :rooms
-  match '/party/:id', :to => "rooms#party", :as => :party, :via => :get
+root :to => "rooms#index"
+resources :rooms
+match '/party/:id', :to => "rooms#party", :as => :party, :via => :get
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
